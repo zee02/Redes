@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let ganhou = 0;
+      do {
+        let upper = 20;
+        let lower = 10;
+
+        let r = Math.floor(Math.random() * (upper - lower + 1) + lower);
+        let inserido = prompt("Insere um número: ");
+
+        if (inserido == r) {
+          alert("Bom Trabalho!");
+          ganhou = 1;
+        } else if (inserido > r) {
+          alert("Azar, Falhaste!. O número era: " + r);
+        } else {
+          alert("Azar, Falhaste!. O número era: " + r);
+        }
+      } while (ganhou == 0);
+    </script>
+  </body>
+</html>

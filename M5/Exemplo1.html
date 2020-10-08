@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo1
+    </title>
+
+    <script>
+      "use strict";
+      document.write("Olá mundo");
+
+      var frase = "<br/> Isto é um texto";
+      document.write(frase + " : " + typeof frase);
+      document.write("<br/>");
+      frase = 123;
+      document.write(frase + " : " + typeof frase);
+
+      document.write("<br/>");
+
+      var num1 = 6;
+      let num2 = 4;
+      if (num1 > 5) {
+        let num2 = 10;
+        document.write(num2);
+      }
+
+      document.write("<br/>");
+      document.write(num2);
+
+      //Alert box
+      //alert("Hello!");
+
+      //Prompt
+      //var nome = prompt("Qual é o teu nome?");
+      //document.write("<br/>" + nome);
+
+      //Confirm
+      //var resultado = confirm("Are you the Boss?");
+      //if (resultado) document.write("<br/> Hi, Boss!");
+      //else document.write("<br/> Bye Bye!");
+
+      //Concatenações
+      document.write("<br/>");
+      let a = 10;
+      let b = 5;
+
+      document.write("A soma entre a e b é: " + a + b);
+      document.write("<br/>");
+      document.write(a + b);
+      document.write("<br/>");
+      document.write("A soma entre a e b é : ", a + b);
+
+      //Conversões de tipos de dados
+      let value = true;
+      document.write("<br/> Value : " + typeof value);
+      value = String(value); //Conversão para string
+      document.write("<br/> Value : " + typeof value);
+
+      let str = "123";
+      document.write("<br/> Str : " + typeof str);
+      str = Number(str); //Conversão para numero
+      document.write("<br/> Str : " + typeof str);
+
+      let bol = 1;
+      document.write("<br/> Bol : " + typeof bol);
+      bol = Boolean(bol); //Conversão para boolean
+      document.write("<br/> Bol : " + bol + " " + typeof bol);
+
+      //Resto da divisão
+
+      value = 15;
+      if (value % 2 == 0) document.write("<br/>Par");
+      else document.write("<br/>Ímpar");
+
+      //Exponencial
+      document.write("<br/> 2 Elevado a 32: ", 2 ** 32);
+
+      //Incremento
+
+      let x = 5,
+        y;
+
+      y = x++;
+      document.write("<br/> x: ", x, "y: ", y);
+
+      y = ++x;
+      document.write("<br/> x: ", x, "y: ", y);
+
+      //Estruturas condicionais
+
+      let idade = 19;
+      let maiorIdade = idade > 18 ? true : false;
+
+      // switch (key) {
+      //   case value:
+
+      //     break;
+
+      //   default:
+      //     break;
+      // }
+
+      //Estruturas repetição
+
+      // while (condition) {
+
+      // }
+
+      // do {
+
+      // } while (condition);
+
+      let valores = [1, 2, 3, 4];
+
+      for (let i = 0; i < valores.length; i++) {
+        document.write("<br/>", valores[i]);
+      }
+
+      array.forEach((valor) => {
+        document.write("<br/>", valor);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

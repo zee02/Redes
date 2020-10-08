@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //A.
+      let data = new Date();
+      let hora = data.getHours();
+      let minutos = data.getMinutes();
+      document.write(data);
+      document.write("<br/>");
+      document.write(hora + ":" + minutos);
+
+      //B.
+      let dia = data.getDay();
+      document.write("<br/>");
+      document.write(dia);
+
+      //C.
+      let mes = data.toLocaleString("default", { month: "long" });
+      document.write("<br/>");
+      document.write(mes);
+
+      //D.
+      let ano = data.getFullYear();
+      document.write("<br/>");
+      document.write(ano);
+
+      //E.
+      let diasemana = data.toLocaleString("default", { weekday: "long" });
+      document.write("<br/>");
+      document.write(diasemana);
+
+      //F.
+      let hora2 = data.getHours();
+      let minutos2 = data.getMinutes();
+      document.write(data);
+      document.write("<br/>");
+      document.write(hora2 + ":" + minutos2);
+    </script>
+  </body>
+</html>

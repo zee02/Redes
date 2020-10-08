@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercicio 2</title>
+    Escreve UMA letra:
+
+    <input id="char" type="text" />
+    <br />
+    <button onclick="check()">Verificar</button>
+
+    <script type="text/javascript">
+      function check() {
+        var letra = document.getElementById("char").value;
+        letra = letra.toLowerCase();
+
+        if (
+          letra == "a" ||
+          letra == "e" ||
+          letra == "i" ||
+          letra == "o" ||
+          letra == "u"
+        )
+          alert("Vogal");
+        else alert("Consoante");
+      }
+    </script>
+  </head>
+</html>

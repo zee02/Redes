@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha1</title>
+  </head>
+  <body>
+    <script>
+      var nome = prompt("Qual é o teu nome?");
+      var disciplina = prompt("Disciplina?");
+
+      let nota1, nota2, nota3;
+
+      do {
+        nota1 = prompt("Nota primeiro teste");
+        if (nota1 > 20 || nota1 < 1) {
+          alert("Tens de inserir uma nota valida!");
+        }
+      } while (nota1 > 20 || nota1 < 1);
+
+      do {
+        nota2 = prompt("Nota segundo teste");
+        if (nota2 > 20 || nota2 < 1) {
+          alert("Tens de inserir uma nota valida!");
+        }
+      } while (nota2 > 20 || nota2 < 1);
+
+      do {
+        nota3 = prompt("Nota terceiro teste");
+        if (nota3 > 20 || nota3 < 1) {
+          alert("Tens de inserir uma nota valida!");
+        }
+      } while (nota3 > 20 || nota3 < 1);
+
+      nota1 = Number(nota1);
+      nota2 = Number(nota2);
+      nota3 = Number(nota3);
+
+      var soma = nota1 + nota2 + nota3;
+
+      var media = Math.round((soma / 3) * 10) / 10;
+
+      if (media > 10) var result = "Aprovado";
+      else result = "Reprovado";
+
+      alert(
+        "O(a) aluno(a) " +
+          nome +
+          " à disciplina " +
+          disciplina +
+          " obteve de média final " +
+          media +
+          " e classificação de " +
+          result
+      );
+    </script>
+  </body>
+</html>

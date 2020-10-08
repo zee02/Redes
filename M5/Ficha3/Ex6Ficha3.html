@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+    <br /> 
+<form>
+  <div class="form-group row">
+    <label for="inputNome" class="col-sm-2 col-form-label">Nome</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputMorada" class="col-sm-2 col-form-label">Morada</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputMorada" placeholder="Morada">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Género</legend>
+      <div class="col-sm-4">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Masculino
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Feminino
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+    <div class="form-group row">
+    <label for="selectPais" class="col-sm-2 col-form-label">País</label>
+    <div class="col-sm-4">
+      <select class="custom-select" id="selectPais">
+        <option selected value="SP">Selecione um país</option>
+        <option value="PT">Portugal</option>
+        <option value="ES">Espanha</option>
+        <option value="FR">França</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-2">Hobbies</div>
+    <div class="col-sm-4">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="hobbies" value="Desporto" id="chk1">
+        <label class="form-check-label" for="gridCheck1">
+          Desporto
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="hobbies" value="Música" id="chk2">
+        <label class="form-check-label" for="gridCheck1">
+          Música
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="hobbies" value="Filmes" id="chk3">
+        <label class="form-check-label" for="gridCheck1">
+          Filmes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="hobbies" value="Dança" id="chk4">
+        <label class="form-check-label" for="gridCheck1">
+          Dança
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-4">
+      <button type="button" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+</form>
+    <div id="mensagem">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nomes = [
+        "Ana",
+        "Maria",
+        "Manuel",
+        "Rodrigo",
+        "Rui",
+        "António",
+        "Sara",
+      ];
+
+      //A.
+      document.write(nomes[1]);
+
+      //B.
+      let size = nomes.length;
+
+      document.write("<br/>");
+      //C.
+      document.write(size);
+
+      //D.
+      let nomes2 = ["Henrique", "Gonçalo"];
+
+      let nomes3 = new Array("Henrique", "Gonçalo");
+
+      document.write("<br/>");
+
+      //E.
+      document.write(nomes.concat(nomes2));
+      nomes[8] = "José";
+      nomes[0] = "Nuno";
+      //F.
+      nomes.pop;
+      //G.
+      nomes.shift;
+
+      document.write("<br/>");
+      //H.
+      guarda = nomes[Math.floor(Math.random() * nomes.length)];
+      document.write(guarda);
+
+      //I
+      nomes.slice(3, 2);
+    </script>
+  </body>
+</html>

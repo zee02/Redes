@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var array = [3, "A", "A", "A", 2, 3, "A", 3, "A", 2, 4, 9, 3];
+      var y = 1;
+      var m = 0;
+      var item;
+      for (var i = 0; i < array.length; i++) {
+        for (var j = i; j < array.length; j++) {
+          if (array[i] == array[j]) m++;
+          if (y < m) {
+            y = m;
+            item = array[i];
+          }
+        }   
+        m = 0;
+      }
+      document.write(item + " "+  mf + " vezes");
+    </script>
+  </body>
+</html>
