@@ -1,0 +1,19 @@
+Exercício 2: Indique quais os modos de comunicação que são utilizados entre o emissor e recetor
+R: Os modos de comunicação utilizados entre o emissor e o recetor são simplex, half-duplex e full-duplex
+
+Caracterize-os e dê exemplos
+R: Simplex- É um modo de transmissão que só transmite numa direção (unidirecional) Ex: Tv, rádio etc...
+   Half-Simplex- É um modo de transmissãoem que o tráfego de dados é efetuado os dois sentidos, mas não pode ser efetuado em simultâneo. Ex: Walki-talkies, Cb´s.
+   Full-Simplex- Neste modo, comunica-se em simultâneo. Ex: Telefones/Telemóveis.
+   
+   Exercício 3:
+   
+Que tipos de sinal podem ser transmitidos numa rede de comunicação? - Sinais analógicos e digitais
+Distinga-os: Sinais digitais com amplitudes geralmente limitadas entre 0 e 1, sinais sob a forma de ondas quadradas
+			Sinais analógicos são transmitidos em formato analógico. A onda elétrica do mesmo tem aplitude de 220V e frequências de 50Hz. Impulsos sob a forma de ondas sinusoidais e amplitudes e frequências que variam em intervalos determinados
+	
+Que dispositivo se encarrega de interpretar e converter esses sinais? - Modem.
+
+Como é que é feita a conversão dos sinais num tipo diferente?- A conversão é feita pelo modem através da modulação (Conversão de sinais digitais para analógicos) ou através da demodulação (conversão de sinais analógicos para digitais).	
+
+Vantagens da transmissão digital: Maior imunidade de ruido e a distorção, integração dos sistemas, maior segurança e privacidade,percorre maior distância, maior velocidade de transmissão.

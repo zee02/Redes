@@ -1,0 +1,5 @@
+en
+conf t
+int fa (porta)
+ip add
+no shut
