@@ -35,7 +35,7 @@
                 >Nº de dias:</label
               >
               <div class="col-sm-2">
-                <input type="text" class="form-control" id="nDias" />
+                <input type="text" class="form-control" id="nDias" required />
               </div>
             </div>
             <div class="form-group row">
@@ -50,7 +50,7 @@
                 >Marcas Disponíveis:</label
               >
               <div class="col-sm-4">
-                <select id="marca" class="form-control">
+                <select id="marca" class="form-control" required>
                   <option value=""></option>
                   <option value="AU">Audi</option>
                   <option value="BM">BMW</option>
@@ -168,7 +168,7 @@
             </div>
             <div class="form-group row">
               <div class="col-sm-2">
-                <button type="button" id="btnCusto" class="btn btn-primary" onclick="calculavalor()">
+                <button type="submit" id="btnCusto" class="btn btn-primary">
                   Custo Final
                 </button>
               </div>

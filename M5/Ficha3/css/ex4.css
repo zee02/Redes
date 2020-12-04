@@ -1,0 +1,16 @@
+.negrito {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.img {
+     background-image: url('lixo.png');
+    background-position: right;
+    padding-left: 30px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+}

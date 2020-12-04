@@ -1,4 +1,4 @@
-function calculavalor() {
+/*function calculavalor() {
   let ndias = document.getElementById("nDias");
 
   let resultado = document.getElementById("resultado");
@@ -55,4 +55,36 @@ function calculavalor() {
     "<br/>" +
     "Extras: " +
     extra;
-}
+}*/
+
+$(document).ready(function () {
+    $("#formRentACar").submit(function (e) { 
+      e.preventDefault();
+      let nDias = parseInt($("#nDias").val()) || 0;
+      let seg = 0;
+      let extra = 0;
+      let extras ="";
+
+      $("input[name=segmento]").each(function (index, element) {
+        
+        if(element.checked) {
+          seg = 5 * index;
+        }
+      });
+
+
+      $("input[name=extras]").each(function (index, element) {
+        
+        if(element.checked) {
+          extra += 15;
+          extras += $(element).val() + "<br/>";
+        }
+      });
+
+      $("#resultado").val(nDias * 25 + nDias * seg + extra + "€");
+
+      let marca = $("#marca option:selected").text();
+      let segmento = $("input[name=segmento]:checked").val();
+      $("#opcoes").html("Marca: " + marca + "<br/>Nº Dias: " + nDias + "<br/>Segmento: " + segmento + "<br/>Extras: " + extras );
+    });
+});
